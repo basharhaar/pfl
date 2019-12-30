@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block title %} Welcome {% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+
+        <header>
+            {% include 'partials/navbar.html'%}
+            <div class="hero-text-box">
+                <h1>A BETTER WAY TO PLAY.<br>PRESENTING SPONSERED FUTSAL.</h1>
+                <a class="btn btn-full js--scroll-to-plans" href="#">SIGN UP</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Pro Futsal League Summary</a>
+            </div>
+            
+        </header>
+        
+        <section class="section-features js--section-features" id="features">
+            <div class="row">
+                <h2>About &mdash; Pro FUTSAL League</h2>
+                <p class="long-copy">
+                  <pre>         
+                             Play the ball.......not the Ref.
+                       </pre>             </p>
+            </div>
+            
+            <div class="row js--wp-1">
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                    <h3>Game Format</h3>
+                    <p>
+                        The format of the game will be 5V5. Eight players will be in te squad and five player in field. Professional Referees will be officaiating the matches.
+                        There will be 20 teams divided into 4 groups.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Time Format</h3>
+                    <p>
+                        The game will be divided into 4 quaters, 8 minutes each. 1 minute break time between 1st and 3rd quater. 5 minutes break during the half time.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-bookmarks-outline icon-big"></i>
+                    <h3>Player Dashboard</h3>
+                    <p>
+                        Official Website with players dashboard and profile including their performance statistics will be updated on a regular basis. Live static feed of the match will be displayed.
+                        Players profile will be updated.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                    <h3>Order your PFL Kit</h3>
+                    <p>
+                               Sign up as a player or a team captain and browse through our shop and select a kit of your desire.
+                               Proper Futsal Shoes need to be worn in order to maintain the pitch. Studs are NOT ALLOWED.            </p>
+                </div>
+            </div>   
+        </section>
+           
+        <section class="section-steps">
+            <div class="row">
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <img src="{% static 'img/21.png' %}" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
+                </div>
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-step clearfix">
+                        <div>1</div>
+                        <p>Sign Up as a player or a team captain. Make a team on your dashboard or send a request to a mutiple team captains.</p>
+                    </div>
+                    <div class="works-step clearfix">
+                        <div>2</div>
+                        <p>Order your Team Kit ( Team Captain must provide a team logo to be printed on the kit ) through our shop.</p>
+                    </div>
+                    <div class="works-step clearfix">
+                        <div>3</div>
+                        <p>And all you need is decency of showing up on time! Simple. </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cities" id="cities">
+            <div class="row">
+                <h2>Our Current Team</h2>
+            </div>
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box">
+                   <cite> <img src="{% static 'img/raza.jpg'%}" alt=""></cite>
+                    <h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        Ali Raza
+                    </div></h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-telephone icon-small"></i>
+                        0334 4210991
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-facebook icon-small"></i>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                <cite>    <img src="{% static 'img/moid.jpg'%}" alt=""></cite>
+                    <h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        Mohid Sharif
+                    </div></h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-telephone icon-small"></i>
+                        0322 8468081
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-facebook icon-small"></i>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                 <cite>    <img src="{% static 'img/badar.jpg'%}" alt=""> </cite>
+                    <h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        Badar Rehman
+                    </div></h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-telephone icon-small"></i>
+                        03076063040
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-facebook icon-small"></i>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                  <cite>  <img src="{% static 'img/mattu.jpg'%}" alt=""> </cite>
+                    <h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        Hasham 
+                    </div></h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-telephone icon-small"></i>
+                        03214647905
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-facebook icon-small"></i>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h2>Sign up today</h2>
+            </div>
+            <div class="row">
+               <h2>Player and team dashboard is under development</h2>
+            </div>
+        </section>
+        
+                
+            </div>
+        </section>
+
+ {% include 'partials/footer.html'%}
+{% endblock %}

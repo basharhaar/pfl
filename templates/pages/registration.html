@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block title %} | Registration{% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+
+ {% include 'partials/navbar.html'%}
+
+ <section class="section-form js--section-form" id="form">
+            <div class="row">
+                <h2>Register your team</h2>
+            </div>
+            <div class="row">
+                <form action="{% url 'save_reg' %}" method="POST" class="contact-form">
+                     {% csrf_token %}
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="team_name">Team Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="team_name" id="team_name" placeholder="Your name" required>
+                        </div>
+                    </div>
+
+                     <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="player_names">Player Names</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea type="text" name="player_names" id="player_names" placeholder="All the Player Names" required></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="city" id="city" placeholder="Your City" required>
+                        </div>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="team_manager">Team Manager Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="team_manager" name="team_manager" id="team_manager" placeholder="Team Manager Name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="team_manager_phonenumber">Team Manager PhoneNumber</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="team_manager_phonenumber" name="team_manager_phonenumber" id="team_manager_phonenumber" placeholder="Manager PhoneNumber" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="team_manager_cnic">Manager CNIC</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="team_manager_cnic" name="team_manager_cnic" id="team_manager_cnic" placeholder="Manager CNIC" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="team_captain">Team Captain Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="team_captain" name="team_captain" id="team_captain" placeholder="Team Captain Name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="team_captain_phonenumber">Team Captain PhoneNumber</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="team_captain_phonenumber" name="team_captain_phonenumber" id="team_captain_phonenumber" placeholder="Captain Name" required>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="extra_remarks">Extra Comments</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="extra_remarks" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </section>   
+
+{% endblock %}
